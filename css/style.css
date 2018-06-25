@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: url("../img/fon.jpg") no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	height: 100%;
+}
+
+#mistake1, #mistake2{color:red; display: none;}
+#map_canvas{width: 100%; height: 400px;}
+#foottext{margin-top: 30px; color:white;}
+.mycontainer{
+padding: 0px !important;
+position: relative;
+}
+
+#search{
+	padding-top: 50px;
+}
+#weather {
+	margin-top:30px;
+}
+#weather img{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+h2, h1#cite{	color:white;}
+#search input, #search button{
+	margin-top: 30px;
+}
+
+#weather .col-md-3 h2{
+	color: black;
+}
+
+
+#weather .col-md-3{
+	display: none;
+	background-color: #E2EEFE;
+	border:1px solid black;
+}
+
+#weather .col-md-3:last-child{
+	border:1px solid black;
+}
+#map {
+	display: none;
+	margin-top:50px;
+}
+
+@media screen and (max-width: 480px) {
+	#weather .col-md-3{margin-top:10px;}
+	#weather .col-md-3:last-child{
+	border-right:5px solid white;
+	}
+	#header {
+    background-position: center;
+	}
+	.row{margin:0 !important;}
+	#map .row{
+     margin-right: -15px; 
+     margin-left: -15px;
+	}
+}
